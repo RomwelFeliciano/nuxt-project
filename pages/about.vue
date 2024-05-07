@@ -6,10 +6,13 @@
       Esse excepturi eaque voluptatem dignissimos tempora distinctio quisquam
       dolor. Quidem!
     </p>
+    <div>{{ data }}</div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { data } = await useFetch("/api/currency/GBP");
+</script>
 
 <style scoped>
 h2 {
