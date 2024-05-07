@@ -1,20 +1,23 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: "authenticated-layout",
-});
-const counter = useState("counter", () => Math.round(Math.random() * 1000));
-</script>
-
 <template>
   <div>
-    <div>
-      <h1>About page</h1>
-      <NuxtLink to="/">Home page</NuxtLink>
-    </div>
-    <div>
-      Counter: {{ counter }}
-      <button @click="counter++">+</button>
-      <button @click="counter--">-</button>
-    </div>
+    <h2>About</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolor.
+      Esse excepturi eaque voluptatem dignissimos tempora distinctio quisquam
+      dolor. Quidem!
+    </p>
   </div>
 </template>
+
+<script setup></script>
+
+<style scoped>
+h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+p {
+  margin: 20px 0;
+}
+</style>
